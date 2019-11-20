@@ -1,2 +1,0 @@
-# wendy.github.io
-my
