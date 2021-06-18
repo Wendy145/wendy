@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style type="text/css">
+    body {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    </style>
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <h1>image map hover change image</h1>
+    <img src="img/esg_0.png" alt="" id="img_bg" usemap="#workmap">
+    <map name="workmap">
+        <area class="aa" shape="poly" coords="168.95,84.83 207.77,57.77 265.42,61.30 308.96,83.65 324.25,115.42 326.60,153.07 323.07,171.89 301.90,206.01 261.89,227.18 207.77,233.07 163.07,196.60 150.12,131.89" alt="" href="https://esg.tsmc.com/csr/ch/focus/governanceAndBusiness.html">
+        <area class="bb" shape="poly" coords="326.6,109.54 337.19,77.77 387.78,55.42 445.43,68.36 477.20,101.30 488.96,138.95 472.49,198.95 427.78,227.19 378.37,229.54 327.78,202.48 310.13,133.06" alt="" href="https://esg.tsmc.com/csr/ch/focus/innovationAndService.html">
+        <area class="cc" shape="poly" coords="508.96,63.65 559.56,54.24 616.03,77.77 647.79,107.18 646.62,167.19 619.56,211.89 566.61,238.95 505.44,226.01 461.90,171.89 473.67,106.01" alt="" href="https://esg.tsmc.com/csr/ch/focus/responsibleSupplyChain.html">
+        <area class="dd" shape="poly" coords="685.44,55.42 748.98,57.77 785.45,88.36 800.74,142.48 787.80,190.72 741.92,228.36 676.03,223.66 628.97,189.54 623.09,124.83 646.62,73.06" alt="" href="https://esg.tsmc.com/csr/ch/focus/greenManufacturing.html">
+        <area class="ee" shape="poly" coords="811.33,60.12 853.69,48.36 914.87,55.42 945.46,86.01 967.81,134.24 959.57,178.95 921.93,218.95 880.75,234.25 818.39,222.48 784.27,189.54 773.68,116.59" alt="" href="https://esg.tsmc.com/csr/ch/focus/inclusiveWorkplace.html">
+        <area class="ff" shape="poly" coords="994.87,54.24 1064.28,48.36 1100.76,80.13 1119.58,140.13 1103.11,204.83 1056.05,234.25 997.22,234.25 947.81,203.66 926.63,141.30 946.63,82.48" alt="" href="https://esg.tsmc.com/csr/ch/focus/socialParticipation.html">
+    </map>
+    <script type="text/javascript">
+    $('.aa').hover(function() {
+        $('#img_bg').attr('src', 'img/esg_1.png');
+    });
+    $('.bb').hover(function() {
+        $('#img_bg').attr('src', 'img/esg_2.png');
+    });
+    $('.cc').hover(function() {
+        $('#img_bg').attr('src', 'img/esg_3.png');
+    });
+    $('.dd').hover(function() {
+        $('#img_bg').attr('src', 'img/esg_4.png');
+    });
+    $('.ee').hover(function() {
+        $('#img_bg').attr('src', 'img/esg_5.png');
+    });
+    $('.ff').hover(function() {
+        $('#img_bg').attr('src', 'img/esg_6.png');
+    });
+    $('#img_bg').mouseout(function() {
+        $(this).attr('src', 'img/esg_0.png');
+    });
+    </script>
+</body>
+
+</html>
